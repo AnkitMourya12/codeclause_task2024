@@ -1,0 +1,67 @@
+/* CSS styles for the music website */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #FF5733; /* Orange background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+.song-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+    background-color: #F94144; /* Red background */
+    color: #fff; /* White text color */
+}
+
+.song-card:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.song-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.song-info {
+    flex: 1;
+}
+
+audio {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #FF5733; /* Orange background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 0.5rem; /* Reduced padding */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

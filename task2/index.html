@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIFY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MUSIFY</h1>
+    </header>
+    <main>
+        <section id="featuredSongs">
+            <h2>Featured Songs</h2>
+            <div class="song-card" onclick="playAudio('song1.mp3')">
+                <img src="high.jpeg" alt="Song 1">
+                <div class="song-info">
+                    <h3>High</h3>
+                    <p>Inkem</p>
+                </div>
+                <audio id="audio1" controls>
+                    <source src="tune.m4r" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!-- Add more featured songs here -->
+        </section>
+        <section id="allSongs">
+            <h2>All Songs</h2>
+            <div class="song-card" onclick="playAudio('song2.mp3')">
+                <img src="vector.jpeg" alt="Song 2">
+                <div class="song-info">
+                    <h3>Love</h3>
+                    <p>Zere</p>
+                </div>
+                <audio id="audio2" controls>
+                    <source src="song2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Welcome to My Music Website! This site is dedicated to sharing some of the best songs from various artists. Sit back, relax, and enjoy the music.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or suggestions, feel free to contact us at: contact@musify.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Music Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

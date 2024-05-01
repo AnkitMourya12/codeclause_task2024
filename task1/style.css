@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+.title{
+    text-align:  center;
+    background-color: rgba(242, 151, 15, 0.582);
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 99%;
+    border-radius: 10px;
+    position: fixed;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f1f1f1 !important;
+  
+}
+
+body .container {margin-top: 150px;
+   margin-left: 200px;
+  /* max-width: 1100px; */ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    position: fixed;
+  }
+  #filter-buttons {
+    position: fixed;
+    top: 70px; 
+    left: 40%;
+   transform: translate(-50);
+  }
+#filter-buttons button {
+  border-radius: 3px;
+  background: #fff;
+  border-color: transparent;
+}
+
+#filter-buttons button:hover {
+  background: #ddd;
+}
+
+#filter-buttons button.active {
+  color: #fff;
+  background: #f78503;
+}
+
+#filterable-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content:space space-around;
+overflow: auto; 
+  }
+  
+  #filterable-cards .card {
+    width: 15rem;
+    border: 2px solid transparent;
+    margin-bottom: 10px; 
+  }
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
